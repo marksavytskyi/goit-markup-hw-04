@@ -66,7 +66,8 @@ header {
 .nav-list .link {
     padding: 32px 0;
 }
-.nav-list .link:hover {
+.nav-list .link:hover,
+.nav-list .link:focus {
     color: var(--accent-color);
 }
 
@@ -213,6 +214,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #F5F4FA;
 }
 
 /* Чем мы занимаемся */
@@ -230,6 +232,9 @@ h1 {
 }
 
 /* Наша команда */
+.team {
+    background-color: #F5F4FA;
+}
 
 .team-list > .item + .item {
    margin-left: 30px;
@@ -243,20 +248,21 @@ h1 {
     line-height: 1.18;
 }
 .team-text {
+    padding-bottom: 16px;
+
     font-size: 16px;
     line-height: 1.18;
 }
 .team-list > .item {
+    width: 270px;
+    background-color: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 .team .description {
     padding-top: 30px;
-    padding-bottom: 16px;
+    padding-bottom: 30px;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-
 }
 .team-link{
     display: flex;
@@ -265,8 +271,6 @@ h1 {
 
     list-style: none;
     padding-left: 0;
-    
-    padding: 16px 30px 32px;
 }
 
 .team-link > .item+.item {
@@ -437,6 +441,8 @@ footer {
     background-color: inherit;
     color: inherit;
     border: none;
+    background-color: #F5F4FA;
+    border-radius: 4px;
 }
 .filter-list .filter-button {
     padding: 0;
@@ -447,7 +453,6 @@ footer {
 .filter-list button:focus {
     
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
